@@ -1,5 +1,10 @@
 # gno
 
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+![PyPI - Version](https://img.shields.io/pypi/v/gno)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/gno)
+
+
 **Interactive CLI tool for building .gitignore files**
 
 gno (pronounced "noh") helps you create `.gitignore` files interactively with a beautiful split-pane TUI interface. It fetches templates from GitHub's official [gitignore repository](https://github.com/github/gitignore) and caches them locally for fast access.
