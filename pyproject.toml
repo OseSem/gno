@@ -31,7 +31,6 @@ Homepage = "https://github.com/OseSem/gno"
 Documentation = "https://github.com/OseSem/gno#readme"
 Repository = "https://github.com/OseSem/gno"
 Issues = "https://github.com/OseSem/gno/issues"
-Changelog = "https://github.com/OseSem/gno/blob/main/CHANGELOG.md"
 
 [build-system]
 requires = ["hatchling"]
