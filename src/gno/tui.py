@@ -2,8 +2,10 @@
 
 from __future__ import annotations
 
+import os
 import platform
 import subprocess
+import sys
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -565,6 +567,13 @@ def run_tui(output: str = ".gitignore") -> bool:
             ]
         )
     )
+
+    if not sys.stdin.isatty() or not sys.stdout.isatty():
+        print("gno: not a terminal", file=sys.stderr)
+        return False
+
+    if not os.environ.get("TERM"):
+        os.environ["TERM"] = "xterm-256color"
 
     app = Application(
         layout=layout,
