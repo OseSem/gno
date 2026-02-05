@@ -1,6 +1,6 @@
 [project]
 name = "gno"
-version = "0.1.0"
+version = "0.1.1"
 description = "Interactive CLI tool for building .gitignore files"
 readme = "README.md"
 license = { text = "MIT" }
